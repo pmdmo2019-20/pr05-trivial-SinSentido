@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:layout_width="match_parent"
+        android:title="@string/settings_title">
+
+        <SeekBarPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            android:key="@string/settings_numberOfQuestions"
+            android:max="10"
+            app:defaultValue="true"
+            android:title="@string/settings_numberOfQuestions"
+            app:min="1"
+            app:showSeekBarValue="true" />
+
+        <SwitchPreference
+            android:icon="@drawable/ic_info_black_24dp"
+            android:key="@string/settings_showDialog"
+            android:title="@string/settings_showDialog"
+            app:defaultValue="true" />
+
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>
